@@ -214,7 +214,7 @@ exports.sendMail = async (req, res) => {
             // Ensure name and email placeholders are replaced
             emailBody = emailBody.replace(/\[name\]/g, user.name);
             emailBody = emailBody.replace(/\[email\]/g, user.email);
-            emailBody = emailBody.replace(/\[unsubscribe_link\]/g, `http://localhost:8080/mathongo/v1/lists/unsubscribe/${user.token}`);
+            emailBody = emailBody.replace(/\[unsubscribe_link\]/g, `https://email-csv-management.onrender.com/mathongo/v1/lists/unsubscribe/${user.token}`);
 
             // Send the email using mailSender function
             await mailSender(user.email, subject, emailBody);
