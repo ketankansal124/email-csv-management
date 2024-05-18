@@ -11,7 +11,7 @@ app.use(express.json());
 const PORT = process.env.PORT || 3000;
 const MONGO_URL = process.env.MONGO_URL;
 
-router.get("/", (req, res) => {
+app.get("/", (req, res) => {
     res.send("Welcome to the CSV Email Management API");
 });
 
