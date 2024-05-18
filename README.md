@@ -11,7 +11,7 @@ This repository contains the code for a RESTful API designed to manage user list
 - **CSV Format**: Supports CSV files with customizable properties for users.
 - **Unique Emails**: Ensures that no two users with the same email exist in a list.
 - **Error Handling**: Provides detailed error messages and CSV reports for failed user additions.
-- 
+  
 ## Additional Features
 
 In addition to the core functionality, the API also includes the following features:
